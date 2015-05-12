@@ -34,6 +34,11 @@
 		46249C021AFAB63B007A16A9 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46249C011AFAB63B007A16A9 /* Shape.swift */; };
 		4660135D1B001A570086D345 /* SquareShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660135C1B001A570086D345 /* SquareShape.swift */; };
 		4660135F1B001DFB0086D345 /* TShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660135E1B001DFB0086D345 /* TShape.swift */; };
+		46DBA2861B02A8E700CF9D1E /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBA2851B02A8E700CF9D1E /* LineShape.swift */; };
+		46DBA2881B02AC6D00CF9D1E /* LShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBA2871B02AC6D00CF9D1E /* LShape.swift */; };
+		46DBA28A1B02B10E00CF9D1E /* JShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBA2891B02B10E00CF9D1E /* JShape.swift */; };
+		46DBA28C1B02B39900CF9D1E /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBA28B1B02B39900CF9D1E /* SShape.swift */; };
+		46DBA28E1B02B63400CF9D1E /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBA28D1B02B63400CF9D1E /* ZShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +83,11 @@
 		46249C011AFAB63B007A16A9 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		4660135C1B001A570086D345 /* SquareShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareShape.swift; sourceTree = "<group>"; };
 		4660135E1B001DFB0086D345 /* TShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TShape.swift; sourceTree = "<group>"; };
+		46DBA2851B02A8E700CF9D1E /* LineShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
+		46DBA2871B02AC6D00CF9D1E /* LShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LShape.swift; sourceTree = "<group>"; };
+		46DBA2891B02B10E00CF9D1E /* JShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JShape.swift; sourceTree = "<group>"; };
+		46DBA28B1B02B39900CF9D1E /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
+		46DBA28D1B02B63400CF9D1E /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,11 @@
 			children = (
 				4660135C1B001A570086D345 /* SquareShape.swift */,
 				4660135E1B001DFB0086D345 /* TShape.swift */,
+				46DBA2851B02A8E700CF9D1E /* LineShape.swift */,
+				46DBA2871B02AC6D00CF9D1E /* LShape.swift */,
+				46DBA2891B02B10E00CF9D1E /* JShape.swift */,
+				46DBA28B1B02B39900CF9D1E /* SShape.swift */,
+				46DBA28D1B02B63400CF9D1E /* ZShape.swift */,
 				46249BB31AF82BAA007A16A9 /* Swiftris */,
 				46249BCD1AF82BAA007A16A9 /* SwiftrisTests */,
 				46249BB21AF82BAA007A16A9 /* Products */,
@@ -314,13 +329,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46DBA2881B02AC6D00CF9D1E /* LShape.swift in Sources */,
 				4660135D1B001A570086D345 /* SquareShape.swift in Sources */,
 				46249BDB1AF82C33007A16A9 /* GameScene.swift in Sources */,
+				46DBA28A1B02B10E00CF9D1E /* JShape.swift in Sources */,
 				46249C021AFAB63B007A16A9 /* Shape.swift in Sources */,
 				46249BFE1AF83016007A16A9 /* Array2D.swift in Sources */,
+				46DBA2861B02A8E700CF9D1E /* LineShape.swift in Sources */,
+				46DBA28C1B02B39900CF9D1E /* SShape.swift in Sources */,
 				4660135F1B001DFB0086D345 /* TShape.swift in Sources */,
 				46249C001AFAAF4E007A16A9 /* Block.swift in Sources */,
 				46249BBD1AF82BAA007A16A9 /* GameViewController.swift in Sources */,
+				46DBA28E1B02B63400CF9D1E /* ZShape.swift in Sources */,
 				46249BB71AF82BAA007A16A9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,14 @@ import SpriteKit
 let numberOfOrientations: UInt32 = 4
 
 
+// MARK: Orientation enum
+
+/**
+Represents Orientation of Current shape
+
+return Zero, Ninety, OneEighty, TwoSeventy
+*/
+
 enum Orientation: Int, Printable {
     case zero = 0, Ninety, OneEighty, TwoSeventy
     
@@ -57,6 +65,8 @@ let FourthBlockIdx: Int = 3
 
 //Shape will be an abstract type
 
+//MARK: Shape Class
+
 class Shape: Hashable, Printable {
     
     //vars
@@ -70,6 +80,8 @@ class Shape: Hashable, Printable {
     
     //computed vars...
     //defines a computed dict, mapping orientation to a tuple, subclasses will override this
+    
+    //MARK: Abstract vars
     var blockRowColumnPositions: [Orientation: Array<(columnDiff: Int, rowDiff: Int)>] {
         return [:]
     }
@@ -93,13 +105,13 @@ class Shape: Hashable, Printable {
         }
     }
     
-    //Printable
+    //MARK: Printable
     var description: String {
         return "\(color) block facing \(orientation) : \(blocks[FirstBlockIdx]), \(blocks[SecondBlockIdx]), \(blocks[ThirdBlockIdx]),\(blocks[FourthBlockIdx])"
     }
     
     
-    //initializers
+    //MARK: initializers
     init(column: Int, row: Int, color: BlockColor, orientation: Orientation) {
         self.column = column
         self.row = row
@@ -112,7 +124,19 @@ class Shape: Hashable, Printable {
         self.init(column: column, row: row, color: BlockColor.random(), orientation: Orientation.random())
     }
     
-    //convienience
+    //MARK: Convienience
+    
+    /**
+    @discussion
+    
+    - Cannot be overridden by subclasses
+    
+    the if let statement is equivilent to:
+    "let blockRowColumnTranslations = blockRowColumnPositions[orientations]
+    if blockRowColumnTranslations != nil ....."
+    the if let syntax implores optional binding, It takes an optional as an input
+    and gives back a required constant if the optional is not nil
+    */
     final func initializeBlocks() {
         if let blockColumnRowTranslations = blockRowColumnPositions[orientation] {
             for i in 0..<blockColumnRowTranslations.count {
@@ -124,16 +148,7 @@ class Shape: Hashable, Printable {
         }
     }
 
-    /*
-    @discussion - initialize blocks
-    ->final == cannot be overridden by subclasses
-    line 1: 
-    the if let statement is equivilent to: 
-    "let blockRowColumnTranslations = blockRowColumnPositions[orientations]
-    if blockRowColumnTranslations != nil ....."
-    the if let syntax implores optional binding, It takes an optional as an input
-    and gives back a required constant if the optional is not nil
-    */
+
 }
 
 //Equatable
