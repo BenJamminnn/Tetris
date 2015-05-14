@@ -39,6 +39,7 @@
 		46DBA28A1B02B10E00CF9D1E /* JShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBA2891B02B10E00CF9D1E /* JShape.swift */; };
 		46DBA28C1B02B39900CF9D1E /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBA28B1B02B39900CF9D1E /* SShape.swift */; };
 		46DBA28E1B02B63400CF9D1E /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBA28D1B02B63400CF9D1E /* ZShape.swift */; };
+		46DBA2901B04266900CF9D1E /* TetrisGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBA28F1B04266900CF9D1E /* TetrisGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		46DBA2891B02B10E00CF9D1E /* JShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JShape.swift; sourceTree = "<group>"; };
 		46DBA28B1B02B39900CF9D1E /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
 		46DBA28D1B02B63400CF9D1E /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
+		46DBA28F1B04266900CF9D1E /* TetrisGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TetrisGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				46249BDA1AF82C33007A16A9 /* GameScene.swift */,
 				46249BFF1AFAAF4E007A16A9 /* Block.swift */,
 				46249C011AFAB63B007A16A9 /* Shape.swift */,
+				46DBA28F1B04266900CF9D1E /* TetrisGame.swift */,
 				46249BBE1AF82BAA007A16A9 /* Main.storyboard */,
 				46249BC11AF82BAA007A16A9 /* Images.xcassets */,
 				46249BC31AF82BAA007A16A9 /* LaunchScreen.xib */,
@@ -331,6 +334,7 @@
 			files = (
 				46DBA2881B02AC6D00CF9D1E /* LShape.swift in Sources */,
 				4660135D1B001A570086D345 /* SquareShape.swift in Sources */,
+				46DBA2901B04266900CF9D1E /* TetrisGame.swift in Sources */,
 				46249BDB1AF82C33007A16A9 /* GameScene.swift in Sources */,
 				46DBA28A1B02B10E00CF9D1E /* JShape.swift in Sources */,
 				46249C021AFAB63B007A16A9 /* Shape.swift in Sources */,
